@@ -80,7 +80,7 @@ console.assert(new Dog().says === "life is ruff");
 function Cat() {
   this.growl = function(){
     return ('meow');
-  }
+  };
 }
 
 var cat = new Cat();
@@ -114,7 +114,7 @@ var KeepSecret = (function(){
 
         this.squeal = function(){
         return (mySecret);
-      }
+      };
     }
 
  return KeepSecret;
@@ -163,9 +163,9 @@ console.assert(dontTellNobody.squeal() === mySecret);
       if(secretKey === key) { 
         return secretData;
       }
-    }
+    };
 
-  };
+  }
 
 
 
