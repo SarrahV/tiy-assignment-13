@@ -149,14 +149,25 @@ console.assert(dontTellNobody.squeal() === mySecret);
 // -- ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ - Your Answer - ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ -- //
 
 
-function Key() {
+  function Key() {
 
-}
+  }
 
-function Safe(data, ) {
-  
-  var privateData = data;
-}
+  function Safe(data, key) {
+
+    var secretKey = key;
+    var secretData = data;
+
+    this.unlock = function(key){
+
+      if(secretKey === key) { 
+        return secretData;
+      }
+    }
+
+  };
+
+
 
 
 
